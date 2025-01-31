@@ -89,8 +89,9 @@ $TOP_PROCESSES
 
   # Send email if any warnings exist
   if [[ -n "$DISK_ALERTS" ]] || [[ -n "$CPU_ALERT" ]] || [[ -n "$MEMORY_ALERT" ]]; then
-    echo "$REPORT" | mail -s "System Monitoring Alert - $DATE" mazenelbialy1010@gmail.com "
-  fi
+    echo "$REPORT" | mail -s "System Monitoring Alert - $DATE" mazenelbialy1010@gmail.com
+fi
+
 }
 
 # Main script
